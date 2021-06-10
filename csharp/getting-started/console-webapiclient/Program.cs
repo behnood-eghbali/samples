@@ -17,12 +17,14 @@ namespace WebAPIClient
 
             foreach (var repo in repositories)
             {
-                Console.WriteLine(repo.Name);
-                Console.WriteLine(repo.Description);
-                Console.WriteLine(repo.GitHubHomeUrl);
-                Console.WriteLine(repo.Homepage);
-                Console.WriteLine(repo.Watchers);
-                Console.WriteLine(repo.LastPush);
+                Console.WriteLine($"Name:\t{repo.Name}");
+                Console.WriteLine($"Description:\t{repo.Description}");
+                Console.WriteLine($"GitHub Home Url:\t{repo.GitHubHomeUrl}");
+                Console.WriteLine($"Homepage:\t{repo.Homepage}");
+                Console.WriteLine($"Watchers:\t{repo.Watchers}");
+                Console.WriteLine($"Forks:\t{repo.Forks}");
+                Console.WriteLine($"Open Issues:\t{repo.OpenIssues}");
+                Console.WriteLine($"Last Push:\t{repo.LastPush}");
                 Console.WriteLine();
             }
         }
