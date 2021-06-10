@@ -20,6 +20,12 @@ namespace WebAPIClient
 
         [JsonPropertyName("watchers")]
         public int Watchers { get; set; }
+        
+        [JsonPropertyName("forks")]
+        public int Forks { get; set; }
+
+        [JsonPropertyName("open_issues")]
+        public int OpenIssues { get; set; }
 
         [JsonPropertyName("pushed_at")]
         public string JsonDate { get; set; }
